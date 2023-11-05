@@ -5,7 +5,7 @@ import Layout from "@/components/Layout";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-
+import lightBulb from "../../public/images/svgs/miscellaneous_icons_1.svg";
 import profilePic from "../../public/images/profile/developer-pic-1.png";
 import TransitionEffect from "@/components/TransitionEffect";
 
@@ -28,23 +28,25 @@ export default function Home() {
             <div className="w-1/2 lg:hidden md:inline-block md:w-full">
               <Image
                 src={profilePic}
-                alt="CodeBucks"
+                alt="ProfilePic"
                 className="h-auto w-full"
                 sizes="100vw"
                 priority
+                style={{ border: '25px solid black' }}
               />
             </div>
             <div className="flex w-1/2 flex-col items-center self-center lg:w-full lg:text-center">
-              <AnimatedText text="Jacob Delott" />
-              <AnimatedText text="Full Stack Engineer" 
-            
-              
-                className="!text-left !text-6xl xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl"
+              <AnimatedText
+                text="Jacob Delott"
+                className="!text-center !text-6xl xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl"
               />
-              <p className="my-4 text-base font-medium md:text-sm sm:!text-xs">
+              <AnimatedText
+                text="Full Stack Developer"
+                className="!text-center text-base lg:text-xl"/>
+              <p className="!text-center my-4 text-base font-medium md:text-sm sm:!text-xs">
               As a skilled full-stack developer, I am dedicated to turning ideas into innovative web applications. Explore my latest projects and articles, showcasing my expertise in React.js and web development.
               </p>
-              <div className="mt-2 flex items-center self-start lg:self-center">
+              <div className="mt-2 flex items-center self-center justify-center lg:self-center">
                 <Link
                   // whileHover={{
                   //   cursor: `url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='48' viewport='0 0 100 100' style='font-size:24px;'><text y='50%'>👆</text></svg>"), auto`,
@@ -74,9 +76,7 @@ export default function Home() {
         </Layout>
 
         <HireMe />
-        <div className="absolute right-8 bottom-8 inline-block w-24 md:hidden">
-          
-        </div>
+        
       </article>
     </>
   );
