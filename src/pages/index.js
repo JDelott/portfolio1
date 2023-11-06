@@ -15,7 +15,7 @@ export default function Home() {
     <>
       <Head>
         <title>Jacob Delott Portfolio</title>
-        
+        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <TransitionEffect />

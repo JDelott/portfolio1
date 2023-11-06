@@ -104,7 +104,7 @@ export default function About() {
                 </span>
                 <h2 className="mb-4 text-xl font-medium capitalize text-dark/75 dark:text-light/75 
                 xl:text-center md:text-lg sm:text-base xs:text-sm">
-                  Coding Time
+                  Hours spent coding 
                 </h2>
               </div>
 
@@ -114,7 +114,7 @@ export default function About() {
                 </span>
                 <h2 className="mb-4 text-xl font-medium capitalize text-dark/75 dark:text-light/75 
                 xl:text-center md:text-lg sm:text-base xs:text-sm">
-                  Teams
+                  Collaborations and Teams
                 </h2>
               </div>
 

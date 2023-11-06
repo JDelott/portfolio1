@@ -5,12 +5,10 @@ import { motion } from "framer-motion";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import proj1 from "../../public/images/projects/crypto-screener-cover-image.jpg";
-import proj2 from "../../public/images/projects/nft-collection-website-cover-image.jpg";
-import proj3 from "../../public/images/projects/fashion-studio-website.jpg";
-import proj4 from "../../public/images/projects/portfolio-cover-image.jpg";
-import proj5 from "../../public/images/projects/agency-website-cover-image.jpg";
-import proj6 from "../../public/images/projects/devdreaming.jpg";
+import proj1 from "../../public/images/projects/plh.png";
+import proj2 from "../../public/images/projects/CarCar.png";
+import proj3 from "../../public/images/projects/ShadowWrestler.png";
+
 import TransitionEffect from "@/components/TransitionEffect";
 
 const FramerImage = motion(Image);
@@ -68,7 +66,7 @@ lg:p-8 xs:rounded-2xl  xs:rounded-br-3xl xs:p-4
             href={github}
             target={"_blank"}
             className="w-10"
-            aria-label="Crypto Screener Application github link"
+            aria-label=" Application github link"
           >
             <GithubIcon />
           </Link>
@@ -79,7 +77,7 @@ lg:p-8 xs:rounded-2xl  xs:rounded-br-3xl xs:p-4
              bg-dark p-2 px-6 text-lg font-semibold text-light dark:bg-light dark:text-dark 
              sm:px-4 sm:text-base
             "
-            aria-label="Crypto Screener Application"
+            aria-label="Application"
           >
             Visit Project
           </Link>
@@ -163,7 +161,7 @@ export default function Projects() {
   return (
     <>
       <Head>
-        <title>Modern Portfolio Built with Nextjs | Projects Page</title>
+        <title>Projects Page</title>
         <meta
           name="description"
           content="Discover the latest webapp projects created by CodeBucks, a Next.js developer with 
@@ -177,66 +175,57 @@ export default function Projects() {
       >
         <Layout className="pt-16">
           <AnimatedText
-            text="Imagination Trumps Knowledge!"
+            text="Happy Coding!"
             className="mb-16 !text-8xl !leading-tight lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
           />
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
             <div className="col-span-12">
               <FeaturedProject
                 type="Featured Project"
-                title="Crypto Screener Application"
-                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency."
+                title="Idaho Dog Sled Tour Website"
+                summary={
+        <ul className="list-inside">
+          <li>
+            Co-developed a full-stack application for a dog sled business.
+          </li>
+          <li>
+            Enabled the business owner and users to manage and create bookings and payment.
+          </li>
+          <li>
+            Used a FastAPI / PostgreSQL backend for robust data storage and retrieval.
+          </li>
+          <li>
+            Ensured optimal performance and reliability for handling API requests.
+          </li>
+          <li>
+            Built a user-friendly UI using React and Bootstrap.
+          </li>
+        </ul>
+      }
                 img={proj1}
-                link="https://devdreaming.com/videos/build-crypto-screener-app-with-react-tailwind-css"
-                github="https://github.com/codebucks27/CryptoBucks-Final-Code"
-              />
-            </div>
-            <div className="col-span-6 sm:col-span-12">
-              <Project
-                type="Website Template"
-                title="NFT collection Website"
-                img={proj2}
-                link="https://devdreaming.com/videos/create-nft-collection-website-reactjs"
-                github="https://github.com/codebucks27/The-Weirdos-NFT-Website-Starter-Code"
+                link="https://snow-dogs.gitlab.io/priest-lake-huskies/"
+                github="https://gitlab.com/snow-dogs/priest-lake-huskies"
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
                 type="Website"
-                title="Fashion Studio Website"
+                title="Car Dealership Admin Site"
+                img={proj2}
+                link="https://help.dreamhost.com/hc/en-us/articles/215613517-Site-not-found"
+                github="https://gitlab.com/JacobDelott/Car-Dealership"
+              />
+            </div>
+            <div className="col-span-6 sm:col-span-12">
+              <Project
+                type="Website"
+                title="Shadow Wrestler"
                 img={proj3}
-                link="https://devdreaming.com/videos/build-stunning-fashion-studio-website-with-reactJS-locomotive-scroll-gsap"
-                github="https://github.com/codebucks27/wibe-studio"
+                link="https://shadow-wrestler.com"
+                github="https://github.com/JDelott/jdelott.github.io"
               />
             </div>
-            <div className="col-span-12">
-              <FeaturedProject
-                type="Portfolio Website"
-                title="React Portfolio Website"
-                summary="A professional portfolio website using React JS, Framer-motion, and Styled-components. It has smooth page transitions, cool background effects, unique design and it is mobile responsive."
-                img={proj4}
-                link="https://devdreaming.com/videos/build-stunning-portfolio-website-react-js-framer-motion"
-                github="https://github.com/codebucks27/react-portfolio-final"
-              />
-            </div>
-            <div className="col-span-6 sm:col-span-12">
-              <Project
-                type="Website Template"
-                img={proj5}
-                title="Agency Website Template"
-                link="https://devdreaming.com/videos/build-stunning-fashion-studio-website-with-reactJS-locomotive-scroll-gsap"
-                github="https://github.com/codebucks27/wibe-studio"
-              />
-            </div>
-            <div className="col-span-6 sm:col-span-12">
-              <Project
-                type="Blog Website"
-                img={proj6}
-                title="DevDreaming"
-                link="https://devdreaming.com"
-                github="https://github.com/codebucks27"
-              />
-            </div>
+            
           </div>
         </Layout>
       </main>
