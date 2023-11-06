@@ -44,7 +44,7 @@ const Education = () => {
         />
         <ul className="w-full flex flex-col items-start justify-between ml-4">
           <Details
-            type="Certificate"
+            type="Advanced Software Engineering Certificate"
             time="2023"
             place="Hack Reactor"
             info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial Intelligence."
